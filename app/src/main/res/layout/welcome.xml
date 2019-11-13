@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Icons from FlatIcon-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rentare"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#F51600"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sharing and saving - reimagined"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/user"
+        android:background="@drawable/text_input_border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/lock"
+        android:background="@drawable/text_input_border"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="85dp"
+        android:layout_gravity="center"
+        android:text="Forgot Password?"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_border">
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/no_account"
+            android:layout_marginLeft="30dp"
+            android:text="Sign Up"
+            android:textSize="14sp"
+            android:textColor="#F51600"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
