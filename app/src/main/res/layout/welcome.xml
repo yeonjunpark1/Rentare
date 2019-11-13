@@ -79,6 +79,7 @@
         android:gravity="center_horizontal" />
 
     <Button
+        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="25dp"
@@ -103,6 +104,7 @@
             android:textColor="#000000"
             android:gravity="center_horizontal" />
         <TextView
+            android:id="@+id/sign_up_text_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/no_account"
@@ -110,7 +112,9 @@
             android:text="Sign Up"
             android:textSize="14sp"
             android:textColor="#F51600"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            />
     </RelativeLayout>
 
 

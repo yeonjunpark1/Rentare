@@ -1,7 +1,6 @@
 package com.example.cs465_rentme;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class HomeScreen extends AppCompatActivity {
