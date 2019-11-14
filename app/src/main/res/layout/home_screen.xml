@@ -11,6 +11,6 @@
         android:layout_height="wrap_content"
         android:text="HOME SCREEN"
         android:textSize="40sp">
-    </TextView>
+    </TextView>z
 
 </LinearLayout>
