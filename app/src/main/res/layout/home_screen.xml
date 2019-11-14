@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeScreen">
 
     <TextView
@@ -11,6 +12,15 @@
         android:layout_height="wrap_content"
         android:text="HOME SCREEN"
         android:textSize="40sp">
-    </TextView>z
+    </TextView>
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_border">
+    </Button>
 
 </LinearLayout>
