@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CS465_RentMe</string>
+    <string name="title_activity_rent__list">Rent_List</string>
 </resources>
