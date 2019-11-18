@@ -128,7 +128,7 @@
                 android:layout_marginLeft="25dp"
                 android:textStyle="bold"
                 android:textSize="16dp"
-                android:text="Webster Barbeque Grill"
+                android:text="Weber Barbeque Grill"
                 />
             <TextView
                 android:layout_width="wrap_content"
