@@ -10,9 +10,9 @@ import android.widget.ListView;
 
 public class lend_list extends AppCompatActivity implements View.OnClickListener {
     ListView lst;
-    String[] items = {"Grill", "Tennis Racket"};
-    String[] description = {"This is a Grill", "Slightly used Wilson tennis racket. Strings are in good condition and it comes with a grip tape on the handle"};
-    Integer[] images = {R.drawable.grill, R.drawable.wilson};
+    String[] items = {"Ladder", "Tennis Racket"};
+    String[] description = {"Ladder is in good shape and is very sturdy. You can reach high places easily", "Slightly used Wilson tennis racket. Strings are in good condition and it comes with a grip tape on the handle"};
+    Integer[] images = {R.drawable.ladder, R.drawable.wilson};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
