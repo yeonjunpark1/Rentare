@@ -1,16 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreen">
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo">
+    </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOME SCREEN"
-        android:textSize="40sp">
+        android:text="Welcome! Choose an option below."
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#F51600"
+        >
+
     </TextView>
+
+    <GridLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:context=".HomeScreen">
+
+            <Button
+            android:id="@+id/rent_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Rent"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/rent"
+            android:drawablePadding="10dp"
+            android:background="#F51600">
+        </Button>
+
+        <Button
+            android:id="@+id/lend_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="Lend"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/lend"
+            android:drawablePadding="10dp"
+            android:background="#F51600">
+        </Button>
+
+        <Button
+            android:id="@+id/map_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"             android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Map"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/map"
+            android:drawablePadding="10dp"
+            android:background="#F51600">
+        </Button>
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"      android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/settings"
+            android:drawablePadding="10dp"
+            android:background="#F51600">
+        </Button>
+
+    </GridLayout>
 
 </LinearLayout>
