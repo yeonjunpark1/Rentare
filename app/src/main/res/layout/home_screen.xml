@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/background_gradient"
     android:orientation="vertical">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo">
+        android:src="@drawable/white_logo_2">
     </ImageView>
 
 
@@ -22,7 +22,7 @@
         android:text="Welcome! Choose an option below."
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
-        android:textColor="#F51600"
+        android:textColor="#FFFFFF"
         >
 
     </TextView>
@@ -51,7 +51,7 @@
             android:textColor="#ffffff"
             android:drawableTop="@drawable/rent"
             android:drawablePadding="10dp"
-            android:background="#F51600">
+            android:background="#4a000000">
         </Button>
 
         <Button
@@ -69,7 +69,7 @@
             android:textColor="#ffffff"
             android:drawableTop="@drawable/lend"
             android:drawablePadding="10dp"
-            android:background="#F51600">
+            android:background="#4a000000">
         </Button>
 
         <Button
@@ -87,7 +87,7 @@
             android:textColor="#ffffff"
             android:drawableTop="@drawable/map"
             android:drawablePadding="10dp"
-            android:background="#F51600">
+            android:background="#4a000000">
         </Button>
 
         <Button
@@ -105,7 +105,7 @@
             android:textColor="#ffffff"
             android:drawableTop="@drawable/settings"
             android:drawablePadding="10dp"
-            android:background="#F51600">
+            android:background="#4a000000">
         </Button>
 
     </GridLayout>

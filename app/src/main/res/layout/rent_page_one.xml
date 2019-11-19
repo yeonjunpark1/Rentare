@@ -100,7 +100,7 @@
             android:gravity="center"
             android:textSize="15sp"
             android:textColor="#000000"
-            android:text="42 Reviews">
+            android:text="32 Reviews">
         </TextView>
     </LinearLayout>
 
@@ -181,12 +181,12 @@
         android:id="@+id/rent_page_one_button"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:text="Rent Me!"
         android:textColor="#ffffff"
-        android:background="@drawable/button_border">
+        android:background="#9a000000">
     </Button>
 
 </LinearLayout>
