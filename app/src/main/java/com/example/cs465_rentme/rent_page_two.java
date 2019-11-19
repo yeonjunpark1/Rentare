@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RentPageOne extends AppCompatActivity implements View.OnClickListener {
+public class rent_page_two extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rent_page_one);
+        setContentView(R.layout.activity_rent_page_two);
 
-        Button rent_page_one_button = findViewById(R.id.rent_page_one_button);
-        rent_page_one_button.setOnClickListener(this);
+        Button rent_page_two_button = findViewById(R.id.reserve_button);
+        rent_page_two_button.setOnClickListener(this);
     }
 
     public void onClick(View v) {
-        Intent intent = new Intent(RentPageOne.this, rent_page_two.class);
+        Intent intent = new Intent(rent_page_two.this, rent_confirmation.class);
         startActivity(intent);
     }
 }
