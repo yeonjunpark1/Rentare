@@ -77,6 +77,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".rent_list" />
         </activity>
+        <activity android:name=".user_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeScreen" />
+        </activity>
+        <activity android:name=".message">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user_page" />
+        </activity>
     </application>
 
 </manifest>

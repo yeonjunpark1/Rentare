@@ -17,9 +17,11 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         Button mapButton = findViewById(R.id.map_button);
         Button lendButton = findViewById(R.id.lend_button);
         Button rentButton = findViewById(R.id.rent_button);
+        Button settingsButton = findViewById(R.id.settings_button);
         mapButton.setOnClickListener(this);
         lendButton.setOnClickListener(this);
         rentButton.setOnClickListener(this);
+        settingsButton.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -27,6 +29,7 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         if (v.getId() == R.id.map_button) intent = new Intent(HomeScreen.this, Map.class);
         else if (v.getId() == R.id.lend_button) intent = new Intent(HomeScreen.this, lend_list.class);
         else if (v.getId() == R.id.rent_button) intent = new Intent(HomeScreen.this, rent_list.class);
+        else if (v.getId() == R.id.settings_button) intent = new Intent(HomeScreen.this, user_page.class);
         startActivity(intent);
     }
 }
