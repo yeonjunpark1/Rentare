@@ -37,8 +37,17 @@
                 android:value=".HomeScreen" />
         </activity>
         <activity android:name=".activity_lend_confirmation" />
-        <activity android:name=".activity_lend_form" />
-        <activity android:name=".lend_list" />
+        <activity android:name=".activity_lend_form">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".lend_list">
+            </meta-data>
+        </activity>
+        <activity android:name=".lend_list">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeScreen"/>
+        </activity>
 
         <activity android:name=".rent_confirmation">
             <meta-data
