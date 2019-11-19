@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rent_page_two"></activity>
+        <activity android:name=".rent_confirmation"></activity>
+        <activity android:name=".rent_page_two" />
         <activity android:name=".Rent_List" />
         <activity android:name=".SignUp">
             <meta-data
