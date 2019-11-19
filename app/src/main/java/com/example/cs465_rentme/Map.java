@@ -2,6 +2,7 @@ package com.example.cs465_rentme;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -46,7 +47,13 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, GoogleM
         mMap.setOnInfoWindowClickListener(this);
         // Add a marker in Siebel and move the camera
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.116566, -88.222277)).
-                        title("BBQ Grill for Rent").snippet("$20 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+                        title("Weber Grill").snippet("$20 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.112021, -88.222953)).
+                title("Phanton 4 Drone Set").snippet("$50 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.115631, -88.226322)).
+                title("Golf Clubs").snippet("$30 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.114113, -88.227652)).
+                title("12 Person Tent").snippet("$50 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.113858, -88.224896)).
                         title("Your Location"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(40.113858, -88.224896)));
@@ -54,6 +61,7 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, GoogleM
 
     @Override
     public void onInfoWindowClick(Marker marker) {
-        Toast.makeText(this, "Hello world!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(Map.this, RentPageOne.class);
+        startActivity(intent);
     }
 }
