@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="40dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -11,10 +11,10 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:src="@drawable/grill"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="45dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -23,9 +23,77 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
                     android:text="Weber Barbeque Grill"/>
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/three_half_stars_"/>
+
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Availability: October 18th - October 30th"/>
+
+        <CalendarView
+            android:id="@+id/calender"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="310dp"
+            android:minDate="10/01/2019"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Location: Champaign, IL"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Price: $20 per day"/>
+
+        <Button
+            android:id="@+id/rental_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:text="Rental Policy"/>
+        <Button
+            android:id="@+id/owner_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="Owner Information"/>
+        <Button
+            android:id="@+id/reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:text="Reserve"/>
 
     </LinearLayout>
 
