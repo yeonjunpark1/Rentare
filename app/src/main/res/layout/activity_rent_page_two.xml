@@ -78,21 +78,24 @@
 
         <Button
             android:id="@+id/rental_policy"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
             android:text="Rental Policy"/>
         <Button
             android:id="@+id/owner_info"
-            android:layout_width="wrap_content"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
             android:text="Owner Information"/>
         <Button
             android:id="@+id/reserve"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="165dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
             android:text="Reserve"/>
 
     </LinearLayout>
