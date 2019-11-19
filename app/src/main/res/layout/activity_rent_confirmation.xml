@@ -3,14 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:src="@drawable/confirmation_check_mark"/>
+        android:src="@drawable/check" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,11 +39,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:orientation="vertical"
-        android:background="@drawable/black_box_border">
+        android:background="@drawable/text_input_border"
+        android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
@@ -52,18 +56,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity=""
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Pick-Up Time: 7:00pm"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Pick-Up Time: 7:00pm"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -80,7 +81,6 @@
         android:text="Home"
         android:textColor="#FFFFFF"
         />
-
     <Button
         android:layout_width="140dp"
         android:layout_height="wrap_content"
@@ -91,5 +91,4 @@
         android:text="Other Items"
         android:textColor="#FFFFFF"
         />
-
 </LinearLayout>
