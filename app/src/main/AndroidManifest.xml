@@ -31,8 +31,7 @@
             android:value="AIzaSyC9ZJ0pv7E7K9Mboj-HWBZIjKAPhv-ecKs" />
 
         <activity
-            android:name=".Map"
-            android:label="@string/title_activity_map">
+            android:name=".Map">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomeScreen" />
