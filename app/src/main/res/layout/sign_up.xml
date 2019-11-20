@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
+    android:background="@drawable/background_gradient"
     android:orientation="vertical">
 
     <!--Icons from FlatIcon-->
@@ -14,7 +15,7 @@
         android:fontFamily="sans-serif-thin"
         android:textSize="80sp"
         android:textStyle="bold"
-        android:textColor="#F51600"
+        android:textColor="#000000"
         android:gravity="center_horizontal" />
 
     <RelativeLayout
@@ -43,7 +44,7 @@
             android:maxLines="1"
             android:textSize="20sp"
             android:textColor="#000000"
-            android:background="@drawable/text_input_border"/>
+            android:background="#4a000000"/>
         <TextView
             android:id="@+id/last_name_label"
             android:layout_width="wrap_content"
@@ -66,7 +67,7 @@
             android:maxLines="1"
             android:textSize="20sp"
             android:textColor="#000000"
-            android:background="@drawable/text_input_border"/>
+            android:background="#4a000000"/>
         <TextView
             android:id="@+id/email_label"
             android:layout_width="wrap_content"
@@ -89,7 +90,7 @@
             android:maxLines="1"
             android:textSize="20sp"
             android:textColor="#000000"
-            android:background="@drawable/text_input_border"/>
+            android:background="#4a000000"/>
         <TextView
             android:id="@+id/password_label"
             android:layout_width="wrap_content"
@@ -112,7 +113,7 @@
             android:maxLines="1"
             android:textSize="20sp"
             android:textColor="#000000"
-            android:background="@drawable/text_input_border"/>
+            android:background="#4a000000"/>
 
     </RelativeLayout>
 
@@ -121,11 +122,11 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
         android:text="SIGN UP"
         android:textColor="#ffffff"
-        android:background="@drawable/button_border">
+        android:background="#8a000000">
     </Button>
 
 </LinearLayout>
