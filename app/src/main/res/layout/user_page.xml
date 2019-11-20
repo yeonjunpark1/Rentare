@@ -27,6 +27,8 @@
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:text="FirstName LastName"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:gravity="center">
     </TextView>
 

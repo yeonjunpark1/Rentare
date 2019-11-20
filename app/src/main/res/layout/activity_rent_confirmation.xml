@@ -20,6 +20,7 @@
         android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
         android:text="Congratulations! You have successfully rented this item."/>
 
     <TextView
@@ -29,6 +30,7 @@
         android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
         android:text="Please check your email for confirmation."/>
 
     <LinearLayout
@@ -49,7 +51,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:textSize="20sp"
-            android:textStyle="bold"
+            android:textColor="#FFFFFF"
             android:text="Address: 201 North Goodwin Champaign, IL 61820"/>
 
         <TextView
@@ -59,14 +61,14 @@
             android:layout_marginBottom="10dp"
             android:text="Pick-Up Time: 7:00pm"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:textSize="20sp"
-            android:textStyle="bold"
+            android:textColor="#FFFFFF"
             android:text="Price: $20.00 per day"/>
     </LinearLayout>
 
