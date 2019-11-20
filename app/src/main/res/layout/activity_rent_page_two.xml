@@ -5,8 +5,8 @@
     android:layout_marginTop="10dp"
     android:orientation="vertical">
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
         android:layout_gravity="center"
         android:src="@drawable/grill"/>
 
@@ -19,6 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="20sp"
             android:text="Weber Barbeque Grill"/>
@@ -39,6 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
+            android:textColor="#000000"
+
             android:textSize="18sp"
             android:textStyle="bold"
             android:text="Availability: November 18th - November 30th"/>
@@ -57,17 +61,18 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="5dp">
 
             <Button
                 android:id="@+id/rent_start_date_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#F51600"
+                android:background="#7a000000"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="Start Date"
                 android:textColor="#FFFFFF"
+
                 android:textSize="14sp"></Button>
 
             <TextView
@@ -77,7 +82,7 @@
                 android:layout_gravity="fill_horizontal"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:background="@drawable/text_input_border"
+                android:background="#2a000000"
                 android:gravity="center"
                 android:text="Select A Start Date"
                 android:textSize="24sp"></TextView>
@@ -96,7 +101,7 @@
                 android:id="@+id/rent_end_date_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#F51600"
+                android:background="#7a000000"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="  End Date   "
@@ -110,7 +115,7 @@
                 android:layout_gravity="fill_horizontal"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:background="@drawable/text_input_border"
+                android:background="#2a000000"
                 android:gravity="center"
                 android:text="Select An End Date"
                 android:textSize="24sp"></TextView>
@@ -120,9 +125,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="#000000"
             android:text="Location: Champaign, IL"/>
         <TextView
             android:layout_width="wrap_content"
@@ -130,6 +136,7 @@
             android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="#000000"
             android:text="Price: $20 per day"/>
 
         <Button
@@ -137,8 +144,9 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/button_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="#7a000000"
             android:text="Rental Policy"
             android:textColor="#FFFFFF"
             />
@@ -147,7 +155,8 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/button_border"
+            android:layout_marginBottom="5dp"
+            android:background="#7a000000"
             android:text="Owner Information"
             android:textColor="#FFFFFF"
             />
@@ -156,7 +165,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/button_border"
+            android:background="#7a000000"
             android:text="Reserve"
             android:textColor="#FFFFFF"
             />

@@ -2,10 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
     android:orientation="vertical"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp">
+    android:background="@drawable/background_gradient"
+    >
 
     <ImageView
         android:layout_width="125dp"
@@ -36,10 +35,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:orientation="vertical"
-        android:background="@drawable/text_input_border"
+        android:background="@drawable/black_box_border"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
@@ -77,7 +76,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:id="@+id/rent_home_button"
-        android:background="@drawable/button_border"
+        android:background="#5a000000"
         android:text="Home"
         android:textColor="#FFFFFF"
         />
@@ -87,7 +86,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/rent_other_items_button"
-        android:background="@drawable/button_border"
+        android:background="#5a000000"
         android:text="Other Items"
         android:textColor="#FFFFFF"
         />

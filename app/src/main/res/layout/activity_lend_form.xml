@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_gradient"
     tools:context=".activity_lend_form">
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
             android:text="Item Name:"
             android:textSize="24sp"
             android:layout_marginRight="10dp"></TextView>
@@ -28,7 +30,7 @@
             android:maxLines="1"
             android:textSize="20sp"
             android:textColor="#000000"
-            android:background="@drawable/text_input_border">
+            android:background="#2a000000">
 
         </EditText>
     </LinearLayout>
@@ -45,6 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Item Price:"
             android:textSize="24sp"
+            android:textColor="#ffffff"
             android:layout_marginRight="10dp"
             ></TextView>
 
@@ -56,7 +59,7 @@
             android:maxLines="1"
             android:textSize="20sp"
             android:textColor="#000000"
-            android:background="@drawable/text_input_border">
+            android:background="#2a000000">
         </EditText>
     </LinearLayout>
 
@@ -65,6 +68,7 @@
         android:layout_height="wrap_content"
         android:text="Item Description:"
         android:textSize="24sp"
+        android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"></TextView>
@@ -78,11 +82,12 @@
         android:maxLines="1"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:background="@drawable/text_input_border"/>
+        android:background="#2a000000"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rental Policy:"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -97,7 +102,7 @@
         android:maxLines="1"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:background="@drawable/text_input_border"/>
+        android:background="#2a000000"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -113,7 +118,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#F51600"
+            android:background="#5a000000"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text="Add Photos"
@@ -125,6 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Availability:"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"></TextView>
@@ -152,7 +158,7 @@
             android:id="@+id/start_date_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#F51600"
+            android:background="#5a000000"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text="Start Date"
@@ -166,7 +172,7 @@
             android:layout_gravity="fill_horizontal"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:background="@drawable/text_input_border"
+            android:background="#2a000000"
             android:gravity="center"
             android:text="Select A Start Date"
             android:textSize="24sp"></TextView>
@@ -185,7 +191,7 @@
             android:id="@+id/end_date_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#F51600"
+            android:background="#5a000000"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text="  End Date   "
@@ -199,7 +205,7 @@
             android:layout_gravity="fill_horizontal"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:background="@drawable/text_input_border"
+            android:background="#2a000000"
             android:gravity="center"
             android:text="Select An End Date"
             android:textSize="24sp"></TextView>
@@ -211,7 +217,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#F51600"
+        android:background="#5a000000"
         android:text="Add Item to Listing"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
