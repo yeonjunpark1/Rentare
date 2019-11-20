@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">CS465_RentMe</string>
     <string name="title_activity_map">Map</string>
+
+    <string name = "category_prompt">Category</string>
+    <string name = "sort_prompt">Sort</string>
+
+    <string-array name="category_choices">
+        <item>Indoor</item>
+        <item>Outdoor</item>
+        <item>Hardware Tools</item>
+        <item>Sport</item>
+        <item>Kitchen</item>
+    </string-array>
+
+    <string-array name="sort_choices">
+        <item>Price Low to High</item>
+        <item>Price High to Low</item>
+        <item>Ratings Low to High</item>
+        <item>Ratings High to Low</item>
+        <item>Distance Low to High</item>
+        <item>Distance High too Low</item>
+    </string-array>
 </resources>

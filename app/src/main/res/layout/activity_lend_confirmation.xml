@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/background_gradient"
@@ -39,7 +38,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:id="@+id/rent_home_button1"
-        android:background="#4a000000"
+        android:background="#5a000000"
         android:text="Home"
         android:textColor="#FFFFFF"
         />
