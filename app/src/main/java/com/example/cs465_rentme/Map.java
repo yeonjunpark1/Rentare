@@ -49,7 +49,7 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, GoogleM
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.116566, -88.222277)).
                         title("Weber Grill").snippet("$20 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.112021, -88.222953)).
-                title("Phanton 4 Drone Set").snippet("$50 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+                title("Phantom 4 Drone Set").snippet("$50 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.115631, -88.226322)).
                 title("Golf Clubs").snippet("$30 / day").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.114113, -88.227652)).
