@@ -40,20 +40,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:textColor="#000000"
 
             android:textSize="18sp"
             android:textStyle="bold"
             android:text="Availability: November 18th - November 30th"/>
 
-<!--        <CalendarView-->
-<!--            android:id="@+id/calender"-->
-<!--            android:layout_marginLeft="30dp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="270dp"-->
-<!--            android:minDate="11/18/2019"-->
-<!--            />-->
+        <!--        <CalendarView-->
+        <!--            android:id="@+id/calender"-->
+        <!--            android:layout_marginLeft="30dp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="270dp"-->
+        <!--            android:minDate="11/18/2019"-->
+        <!--            />-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,31 +63,29 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp">
 
-            <TextView
-                android:id="@+id/rent_start_date"
-
-                android:layout_width="117dp"
-                android:layout_height="match_parent"
+            <Button
+                android:id="@+id/rent_start_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#7a000000"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:paddingTop="10dp"
-                android:text="Start Date"
+                android:text="Select A Start Date"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:textSize="18sp"></TextView>
+                android:textSize="14sp"></Button>
 
-            <Button
-                android:id="@+id/rent_start_date_button"
-
+            <TextView
+                android:id="@+id/rent_start_date"
                 android:layout_width="220dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill_horizontal"
                 android:layout_marginLeft="20dp"
                 android:background="#2a000000"
                 android:gravity="center"
-                android:text="Select A Start Date"
-                android:textSize="18sp"></Button>
+                android:text="Start Date"
+                android:textSize="24sp"
+                android:layout_weight="1"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,30 +96,30 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp">
 
-            <TextView
-                android:id="@+id/rent_end_date"
-
-                android:layout_width="117dp"
-                android:layout_height="match_parent"
-                android:background="#7a000000"
-                android:paddingTop="10dp"
-                android:paddingLeft="18dp"
-                android:paddingRight="15dp"
-                android:text= "End Date"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:textSize="18sp"></TextView>
-
             <Button
                 android:id="@+id/rent_end_date_button"
-                android:layout_width="220dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#7a000000"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text= " Select An End Date  "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                ></Button>
+
+            <TextView
+                android:id="@+id/rent_end_date"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
                 android:layout_gravity="fill_horizontal"
                 android:layout_marginLeft="20dp"
                 android:background="#2a000000"
                 android:gravity="center"
-                android:text="Select An End Date"
-                android:textSize="18sp"></Button>
+                android:text="End Date"
+                android:textSize="24sp"
+                android:layout_weight="1"></TextView>
         </LinearLayout>
 
         <TextView
@@ -142,6 +140,16 @@
             android:textColor="#000000"
             android:text="Price: $20 per day"/>
 
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Total Price: $0"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/rental_policy"
             android:layout_width="200dp"
@@ -150,7 +158,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:background="#7a000000"
-            android:text="Rental Policy"
+            android:text="Check Rental Policy"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             />
@@ -161,7 +169,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
             android:background="#7a000000"
-            android:text="Owner Information"
+            android:text="See Owner Information"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             />
