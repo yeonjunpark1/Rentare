@@ -63,20 +63,23 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp">
 
-            <Button
-                android:id="@+id/rent_start_date_button"
+            <TextView
+                android:id="@+id/rent_start_date"
+
                 android:layout_width="117dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#7a000000"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
+                android:paddingTop="10dp"
                 android:text="Start Date"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:textSize="14sp"></Button>
+                android:textSize="18sp"></TextView>
 
-            <TextView
-                android:id="@+id/rent_start_date"
+            <Button
+                android:id="@+id/rent_start_date_button"
+
                 android:layout_width="220dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill_horizontal"
@@ -84,7 +87,7 @@
                 android:background="#2a000000"
                 android:gravity="center"
                 android:text="Select A Start Date"
-                android:textSize="24sp"></TextView>
+                android:textSize="18sp"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,20 +98,22 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp">
 
-            <Button
-                android:id="@+id/rent_end_date_button"
+            <TextView
+                android:id="@+id/rent_end_date"
+
                 android:layout_width="117dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#7a000000"
-                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="18dp"
                 android:paddingRight="15dp"
                 android:text= "End Date"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:textSize="14sp"></Button>
+                android:textSize="18sp"></TextView>
 
-            <TextView
-                android:id="@+id/rent_end_date"
+            <Button
+                android:id="@+id/rent_end_date_button"
                 android:layout_width="220dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill_horizontal"
@@ -116,7 +121,7 @@
                 android:background="#2a000000"
                 android:gravity="center"
                 android:text="Select An End Date"
-                android:textSize="24sp"></TextView>
+                android:textSize="18sp"></Button>
         </LinearLayout>
 
         <TextView

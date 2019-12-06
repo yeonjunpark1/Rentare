@@ -32,6 +32,7 @@ public class rent_page_two extends AppCompatActivity implements View.OnClickList
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void onClick(View v) {
         if(v.getId() == R.id.reserve_button) {
+
             Intent intent = new Intent(rent_page_two.this, rent_confirmation.class);
             startActivity(intent);
         } else if(v.getId() == R.id.rent_start_date_button){
@@ -40,18 +41,18 @@ public class rent_page_two extends AppCompatActivity implements View.OnClickList
             int month = c.get(Calendar.MONTH);
             int day = c.get(Calendar.DAY_OF_MONTH);
 
-
             DatePickerDialog datePickerDialog = new DatePickerDialog(rent_page_two.this,
                     new DatePickerDialog.OnDateSetListener() {
 
                         @Override
                         public void onDateSet(DatePicker view, int year,
                                               int monthOfYear, int dayOfMonth) {
-                            TextView rent_start_date = findViewById(R.id.rent_start_date);
+                            TextView rent_start_date = findViewById(R.id.rent_start_date_button);
                             rent_start_date.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
 
                         }
                     }, year, month, day);
+
             datePickerDialog.show();
         } else if(v.getId() == R.id.rent_end_date_button) {
             final Calendar c = Calendar.getInstance();
@@ -64,11 +65,14 @@ public class rent_page_two extends AppCompatActivity implements View.OnClickList
                         @Override
                         public void onDateSet(DatePicker view, int year,
                                               int monthOfYear, int dayOfMonth) {
-                            TextView rent_end_date = findViewById(R.id.rent_end_date);
+                            TextView rent_end_date = findViewById(R.id.rent_end_date_button);
                             rent_end_date.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
                         }
                     }, year, month, day);
+
             datePickerDialog.show();
         }
     }
+
+
 }
