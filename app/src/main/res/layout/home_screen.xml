@@ -71,27 +71,11 @@
             android:drawablePadding="10dp"
             android:background="#4a000000">
         </Button>
-
-        <Button
-            android:id="@+id/map_button"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"             android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:layout_column="0"
-            android:layout_row="1"
-            android:text="Map"
-            android:textColor="#ffffff"
-            android:drawableTop="@drawable/map"
-            android:drawablePadding="10dp"
-            android:background="#4a000000">
-        </Button>
+    </GridLayout>
 
         <Button
             android:id="@+id/settings_button"
+            android:layout_gravity="center_horizontal"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -108,6 +92,6 @@
             android:background="#4a000000">
         </Button>
 
-    </GridLayout>
+
 
 </LinearLayout>
