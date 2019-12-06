@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class rent_confirmation extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +19,11 @@ public class rent_confirmation extends AppCompatActivity implements View.OnClick
         Button rent_other_items_button = findViewById(R.id.rent_other_items_button);
         rent_home_button.setOnClickListener(this);
         rent_other_items_button.setOnClickListener(this);
+
+        TextView tv1 = findViewById(R.id.price_total);
+        Intent intent = getIntent();
+        String price= intent.getStringExtra("total_price");
+        tv1.setText(price + ".00");
     }
 
     public void onClick(View v) {

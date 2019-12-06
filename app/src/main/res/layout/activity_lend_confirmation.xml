@@ -41,7 +41,7 @@
         android:layout_marginTop="25dp"
         android:id="@+id/rent_home_button1"
         android:background="#5a000000"
-        android:text="Items Listed"
+        android:text="See Items Listed"
         android:textColor="#FFFFFF"
         />
 

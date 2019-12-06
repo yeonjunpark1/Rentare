@@ -64,12 +64,21 @@
             android:textColor="#FFFFFF"/>
 
         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="Price: $20.00 per day"/>
+
+        <TextView
+            android:id="@+id/price_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:textSize="20sp"
+            android:text="Total Price: $0.00"
             android:textColor="#FFFFFF"
-            android:text="Price: $20.00 per day"/>
+            android:textSize="20sp" />
     </LinearLayout>
 
     <Button
@@ -79,7 +88,7 @@
         android:layout_marginTop="25dp"
         android:id="@+id/rent_home_button"
         android:background="#5a000000"
-        android:text="Home"
+        android:text=" Go Home"
         android:textColor="#FFFFFF"
         />
     <Button
@@ -89,7 +98,7 @@
         android:layout_marginTop="10dp"
         android:id="@+id/rent_other_items_button"
         android:background="#5a000000"
-        android:text="Other Items"
+        android:text=" See Other Items"
         android:textColor="#FFFFFF"
         />
 </LinearLayout>

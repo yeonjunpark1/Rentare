@@ -83,7 +83,7 @@ public class activity_lend_form extends AppCompatActivity implements View.OnClic
                         public void onDateSet(DatePicker view, int year,
                                               int monthOfYear, int dayOfMonth) {
                             TextView start_date = findViewById(R.id.start_date);
-                            start_date.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                            start_date.setText((monthOfYear + 1) + "-" + dayOfMonth + "-" + year);
 
                         }
                     }, year, month, day);
@@ -102,7 +102,7 @@ public class activity_lend_form extends AppCompatActivity implements View.OnClic
                         public void onDateSet(DatePicker view, int year,
                                               int monthOfYear, int dayOfMonth) {
                             TextView end_date = findViewById(R.id.end_date);
-                            end_date.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                            end_date.setText((monthOfYear + 1) + "-" + dayOfMonth + "-" + year);
                         }
                     }, year, month, day);
             datePickerDialog.show();
