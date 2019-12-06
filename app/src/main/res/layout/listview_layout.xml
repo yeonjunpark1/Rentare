@@ -19,7 +19,7 @@
         android:layout_marginBottom="20dp"/>
 
     <TextView
-        android:id="@+id/tvitems"
+        android:id="@+id/tvavailability"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -27,15 +27,27 @@
         android:layout_toEndOf="@id/ivimages"
         android:layout_toRightOf="@id/ivimages"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
-
+        android:textSize="24sp"
+        android:text="Hello"/>
     <TextView
-        android:id="@+id/tvdescription"
+        android:id="@+id/tvitems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/ivimages"
+        android:layout_toRightOf="@id/ivimages"
+        android:layout_below="@id/tvavailability"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="Hello"/>
+    <TextView
+        android:id="@+id/tvprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvitems"
         android:layout_toEndOf="@id/ivimages"
         android:layout_toRightOf="@id/ivimages"
         android:textColor="#FFFFFF"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:text="Hello"/>
 </RelativeLayout>

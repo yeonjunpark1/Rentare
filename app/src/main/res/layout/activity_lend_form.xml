@@ -23,14 +23,18 @@
             android:text="Item Name:"
             android:textSize="24sp"
             android:layout_marginRight="10dp"></TextView>
+
         <EditText
+            android:id="@+id/item_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#2a000000"
             android:maxLines="1"
-            android:textSize="20sp"
             android:textColor="#000000"
-            android:background="#2a000000">
+            android:textSize="20sp"
+            android:hint="Enter Name"
+            android:paddingLeft="5dp">
 
         </EditText>
     </LinearLayout>
@@ -45,22 +49,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Item Price:"
+            android:text="Price per day:"
             android:textSize="24sp"
             android:textColor="#ffffff"
             android:layout_marginRight="10dp"
             ></TextView>
 
         <EditText
+            android:id="@+id/item_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#2a000000"
             android:inputType="number"
             android:maxLines="1"
-            android:textSize="20sp"
             android:textColor="#000000"
-            android:background="#2a000000">
-        </EditText>
+            android:textSize="20sp"
+            android:hint="Enter Price"
+            android:paddingLeft="5dp"></EditText>
     </LinearLayout>
 
     <TextView
@@ -82,7 +88,10 @@
         android:maxLines="1"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:background="#2a000000"/>
+        android:background="#2a000000"
+        android:gravity="left | top"
+        android:hint="Enter Description"
+        android:paddingLeft="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,17 +101,22 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"></TextView>
+
     <EditText
+        android:id="@+id/rental_policy"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_gravity="fill_vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_weight="1"
-        android:layout_gravity="fill_vertical"
+        android:background="#2a000000"
         android:maxLines="1"
-        android:textSize="20sp"
         android:textColor="#000000"
-        android:background="#2a000000"/>
+        android:textSize="20sp"
+        android:gravity="left | top"
+        android:hint="Enter Policy"
+        android:paddingLeft="5dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,17 +125,19 @@
         android:layout_marginTop="10dp">
 
         <ImageView
+            android:id="@+id/camera_photo"
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:srcCompat="@drawable/camera"></ImageView>
 
         <Button
+            android:id="@+id/button_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#5a000000"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="Add Photos"
+            android:text="Add Photo"
             android:textColor="#FFFFFF"
             android:textSize="18sp"></Button>
     </LinearLayout>
@@ -161,7 +177,7 @@
             android:background="#5a000000"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="Start Date"
+            android:text="Select A Start Date"
             android:textColor="#FFFFFF"
             android:textSize="14sp"></Button>
 
@@ -174,7 +190,7 @@
             android:layout_weight="1"
             android:background="#2a000000"
             android:gravity="center"
-            android:text="Select A Start Date"
+            android:text="Start Date"
             android:textSize="24sp"></TextView>
     </LinearLayout>
     <LinearLayout
@@ -194,7 +210,7 @@
             android:background="#5a000000"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="  End Date   "
+            android:text=" Select An End Date "
             android:textColor="#FFFFFF"
             android:textSize="14sp"></Button>
 
@@ -207,7 +223,7 @@
             android:layout_weight="1"
             android:background="#2a000000"
             android:gravity="center"
-            android:text="Select An End Date"
+            android:text="End Date"
             android:textSize="24sp"></TextView>
     </LinearLayout>
 
