@@ -19,6 +19,8 @@
         android:textColor="#000000"
         android:paddingStart="10dp"
         android:drawableStart="@drawable/search"
+        android:drawableEnd="@drawable/send_button"
+
         android:background="#1a000000"/>
 
     <LinearLayout
@@ -31,28 +33,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:background="#1a000000">
 
 
-            <TextView
-                android:id="@+id/category"
-                android:textStyle="bold"
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:text="Category"/>
+                android:paddingLeft="10dp"
+                android:id="@+id/category_spinner"/>
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/drop_down"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp"/>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -60,43 +53,64 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
             android:layout_marginTop="25dp"
             android:background="#1a000000">
-            <TextView
-                android:id="@+id/sort_by"
-                android:textStyle="bold"
+
+
+
+
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:textSize="20dp"
-                android:text="Sort By"/>
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/drop_down"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="5dp"/>
+                android:paddingRight="10dp"
+                android:id="@+id/sort_spinner"/>
+
+
 
         </LinearLayout>
 
       </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1a000000"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/map2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="See on Map">
+            </Button>
 
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/map_icon"
+                android:src="@drawable/black_map"
+                />
+        </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:rowCount="2"
-        android:columnCount="2">
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:columnCount="2"
+        android:numColumns="2" >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#1a000000"
+            android:id="@+id/grill"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
@@ -141,6 +155,12 @@
                     android:layout_toRightOf="@+id/grill_stars"
                     android:text="32">
                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/grill_stars"
+                    android:text="Available"/>
 
             </RelativeLayout>
 
@@ -150,11 +170,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#3b000000"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center_horizontal"
+            android:id="@+id/golf_clubs"
             android:orientation="vertical">
 
             <ImageView
@@ -193,17 +215,27 @@
                     android:layout_toRightOf="@+id/golf_stars"
                     android:text="87">
                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/golf_stars"
+                    android:text="Unavailable"/>
+
             </RelativeLayout>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#1a000000"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center_horizontal"
+            android:id="@+id/drone"
             android:orientation="vertical">
 
             <ImageView
@@ -242,6 +274,12 @@
                     android:layout_toRightOf="@+id/drone_stars"
                     android:text="19">
                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/drone_stars"
+                    android:text="Available"/>
 
             </RelativeLayout>
 
@@ -251,11 +289,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#1a000000"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center_horizontal"
+            android:id="@+id/tent"
             android:orientation="vertical">
 
             <ImageView
@@ -295,8 +335,16 @@
                     android:layout_toRightOf="@+id/tent_stars"
                     android:text="26">
                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@id/tent_stars"
+                    android:text="Available"/>
             </RelativeLayout>
         </LinearLayout>
+
+
     </GridLayout>
 
 

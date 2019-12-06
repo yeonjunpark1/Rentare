@@ -47,13 +47,13 @@
             android:textStyle="bold"
             android:text="Availability: November 18th - November 30th"/>
 
-<!--        <CalendarView-->
-<!--            android:id="@+id/calender"-->
-<!--            android:layout_marginLeft="30dp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="270dp"-->
-<!--            android:minDate="11/18/2019"-->
-<!--            />-->
+        <!--        <CalendarView-->
+        <!--            android:id="@+id/calender"-->
+        <!--            android:layout_marginLeft="30dp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="270dp"-->
+        <!--            android:minDate="11/18/2019"-->
+        <!--            />-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

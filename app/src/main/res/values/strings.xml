@@ -8,17 +8,18 @@
     <string-array name="category_choices">
         <item>Indoor</item>
         <item>Outdoor</item>
-        <item>Hardware Tools</item>
-        <item>Sport</item>
-        <item>Kitchen</item>
     </string-array>
 
     <string-array name="sort_choices">
         <item>Price Low to High</item>
-        <item>Price High to Low</item>
-        <item>Ratings Low to High</item>
         <item>Ratings High to Low</item>
-        <item>Distance Low to High</item>
-        <item>Distance High too Low</item>
     </string-array>
+
+    <string-array name="itemNames">
+        <item>Weber Grill</item>
+        <item>Golf Clubs</item>
+        <item>Phantom 4 Drone Set</item>
+        <item>12 Person Tent</item>
+    </string-array>
+
 </resources>
