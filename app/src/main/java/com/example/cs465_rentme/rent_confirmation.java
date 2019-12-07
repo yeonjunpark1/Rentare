@@ -22,7 +22,10 @@ public class rent_confirmation extends AppCompatActivity implements View.OnClick
 
         TextView tv1 = findViewById(R.id.price_total);
         Intent intent = getIntent();
-        String price= intent.getStringExtra("total_price");
+        String price = intent.getStringExtra("total_price");
+        String it_price = intent.getStringExtra("item_price");
+        TextView tv2 = findViewById(R.id.per_day);
+        tv2.setText("Price: " + it_price);
         tv1.setText(price + ".00");
     }
 

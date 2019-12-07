@@ -4,26 +4,30 @@
     android:layout_height="match_parent"
     android:layout_marginTop="10dp"
     android:orientation="vertical">
+
     <ImageView
+        android:id="@+id/item_image_id"
         android:layout_width="185dp"
         android:layout_height="185dp"
         android:layout_gravity="center"
-        android:src="@drawable/grill"/>
+        android:src="@drawable/grill" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
+
         <TextView
+            android:id="@+id/item_name_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
+            android:text="Weber Barbeque Grill"
             android:textColor="#000000"
-            android:textStyle="bold"
             android:textSize="20sp"
-            android:text="Weber Barbeque Grill"/>
+            android:textStyle="bold" />
         <ImageView
             android:layout_width="85dp"
             android:layout_height="30dp"
@@ -41,11 +45,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="0dp"
-            android:textColor="#000000"
+            android:text="Availability: December 13th - December 30th"
 
+            android:textColor="#000000"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="Availability: November 18th - November 30th"/>
+            android:textStyle="bold" />
 
         <!--        <CalendarView-->
         <!--            android:id="@+id/calender"-->
@@ -131,14 +135,16 @@
             android:textSize="16sp"
             android:textColor="#000000"
             android:text="Location: Champaign, IL"/>
+
         <TextView
+            android:id="@+id/item_price_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textSize="16sp"
+            android:text="Price: $20 per day"
             android:textColor="#000000"
-            android:text="Price: $20 per day"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/total_price"
@@ -162,6 +168,7 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             />
+
         <Button
             android:id="@+id/owner_info"
             android:layout_width="200dp"
@@ -169,10 +176,9 @@
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
             android:background="#7a000000"
-            android:text="See Owner Information"
+            android:text="Message Owner"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
         <Button
             android:id="@+id/reserve_button"
             android:layout_width="200dp"
